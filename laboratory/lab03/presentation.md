@@ -3,7 +3,8 @@
 lang: ru-RU
 title: Structural approach to the deep learning method
 author: |
-	Балханова Алтана Юрьевна
+	Балханова Алтана 
+	НПМбд-03-21
 institute: |
 	\inst{1}RUDN University, Moscow, Russian Federation
 date: NEC--2022, 25 April, 2022 Moscow, Russian Federation
