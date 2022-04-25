@@ -1,0 +1,60 @@
+---
+## Front matter
+lang: ru-RU
+title: Structural approach to the deep learning method
+author: |
+	Балханова Алтана Юрьевна
+institute: |
+	\inst{1}RUDN University, Moscow, Russian Federation
+date: NEC--2022, 25 April, 2022 Moscow, Russian Federation
+## Formatting
+toc: false
+slide_level: 2
+theme: metropolis
+header-includes: 
+ - \metroset{progressbar=frametitle,sectionpage=progressbar,numbering=fraction}
+ - '\makeatletter'
+ - '\beamer@ignorenonframefalse'
+ - '\makeatother'
+aspectratio: 43
+section-titles: true
+---
+
+# Лабораторная работа №3
+
+## Цель работы
+
+- Научиться оформлять отчёты с помощью легковесного языка разметки Markdown.
+
+## Задание
+
+– Сделать отчёт по предыдущей лабораторной работе в формате Markdown.
+– Предоставить отчёты в 3 форматах: pdf, docx и md (в архиве,
+поскольку он должен содержать скриншоты, Makefile и т.д.)
+
+## Markdown
+
+```
+Markdown — облегчённый язык разметки, созданный с целью обозначения форматирования в простом тексте, с максимальным сохранением его читаемости человеком, и пригодный для машинного преобразования в языки для продвинутых публикаций
+```
+
+## Выполнение второй лабораторной работы в markdown
+
+![отчёт в markdown](image/Screenshot_22.png){ #fig:001 width=70% }
+
+## Работа с pandoc
+
+![Версия pandoc](image/Screenshot_21.png){ #fig:001 width=70% }
+### Преобразовала файл, используя
+``` 
+pandoc README.md -o README.pdf
+pandoc README.md -o README.docx
+```
+## Вывод
+
+Я научилась оформлять отчёты с помощью легковесного языка разметки Markdown.
+
+
+## {.standout}
+
+Спасибо за внимание
