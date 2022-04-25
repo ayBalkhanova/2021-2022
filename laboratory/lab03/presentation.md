@@ -1,7 +1,7 @@
 ---
 ## Front matter
 lang: ru-RU
-title: Structural approach to the deep learning method
+title: Презентация по лабораторной работе №3
 author: |
 	Балханова Алтана 
 	НПМбд-03-21
