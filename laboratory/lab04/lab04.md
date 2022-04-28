@@ -43,14 +43,14 @@ sansfontoptions: Ligatures=TeX,Scale=MatchLowercase
 monofontoptions: Scale=MatchLowercase,Scale=0.9
 ## Biblatex
 biblatex: true
-biblio-style: "gost-numeric"
+biblio-style: "numeric"
 biblatexoptions:
   - parentracker=true
   - backend=biber
   - hyperref=auto
   - language=auto
   - autolang=other*
-  - citestyle=gost-numeric
+  - citestyle=numeric
 ## Pandoc-crossref LaTeX customization
 figureTitle: "Рис."
 tableTitle: "Таблица"
@@ -72,78 +72,130 @@ header-includes:
 
 # Выполнение лабораторной работы
 1. С помощью команды pwd определила полное имя домашнего каталога(рис. [-@fig:001])
-![pwd](image/Screenshot_1.png){ #fig:001 width=70% }
+
+	![pwd](image/Screenshot_1.png){ #fig:001 width=70% }
+
 1. 
 	1. Перешла в каталог /tmp, с помощью команды ls вывела содержимое на экран(рис. [-@fig:002])
-	![содержимое каталога /tmp](image/Screenshot_3.png){ #fig:002 width=70% }
+	
+		![содержимое каталога /tmp](image/Screenshot_3.png){ #fig:002 width=70% }
+	
 	1. Используя опцию а, вывела содержимое на экран, включая скрытые файлы(рис. [-@fig:003])
-	![ls -a](image/Screenshot_4.png){ #fig:003 width=70% }
+	
+		![ls -a](image/Screenshot_4.png){ #fig:003 width=70% }
+	
 	1. Используя опцию аlF, вывела содержимое с подробной информацией на экран, включая скрытые файлы(рис. [-@fig:004])
-	![ls -alF](image/Screenshot_5.png){ #fig:004 width=70% }
+	
+		![ls -alF](image/Screenshot_5.png){ #fig:004 width=70% }
+	
 	1. Используя опцию l, вывела содержимое с подробной информацией на экран(рис. [-@fig:005])
-	![ls -l](image/Screenshot_6.png){ #fig:005 width=70% }
+	
+		![ls -l](image/Screenshot_6.png){ #fig:005 width=70% }
+	
 	1. Используя опцию F, вывела содержимое на экран. Он показывает тип и имя файлов.(рис. [-@fig:006])
-	![ls -F](image/Screenshot_7.png){ #fig:006 width=70% }
+	
+		![ls -F](image/Screenshot_7.png){ #fig:006 width=70% }
+	
 	1. Определила, что в каталоге /var/spool нет подкаталога с именем cron(рис. [-@fig:007])
-	![ls](image/Screenshot_8.png){ #fig:007 width=70% }
+	
+		![ls](image/Screenshot_8.png){ #fig:007 width=70% }
+	
 	1. Перешла в домашний каталог и использовала команду ls для вывода содержимого(рис. [-@fig:008])
-	![содержимое домашнего каталога](image/Screenshot_9.png){ #fig:008 width=70% }
+	
+		![содержимое домашнего каталога](image/Screenshot_9.png){ #fig:008 width=70% }
+	
 	1. Используя команду ls -alF определила, что владельцем файлов и подкаталогов является aybalkhanova(рис. [-@fig:009])
-	![ls -alF](image/Screenshot_10.png){ #fig:009 width=70% }
+	
+		![ls -alF](image/Screenshot_10.png){ #fig:009 width=70% }
+	
 1. 
 	1. В домашнем каталоге создала каталог newdir и создала внутри него каталог morefun(рис. [-@fig:010])
-	![Cоздание каталогов newdir и morefun](image/Screenshot_11.png){ #fig:010 width=70% }
+	
+		![Cоздание каталогов newdir и morefun](image/Screenshot_11.png){ #fig:010 width=70% }
+	
 	1. В домашнем каталоге создала каталоги с именами letters, memos, misk(рис. [-@fig:011])
-	![Cоздание каталогов с именами letters, memos, misk](image/Screenshot_12.png){ #fig:011 width=70% }
+	
+		![Cоздание каталогов с именами letters, memos, misk](image/Screenshot_12.png){ #fig:011 width=70% }
+	
 	1. Затем удалила эти каталоги одной командой rmdir(рис. [-@fig:012])
-	![Удаление каталогов с именами letters, memos, misk](image/Screenshot_13.png){ #fig:012 width=70% }
+	
+		![Удаление каталогов с именами letters, memos, misk](image/Screenshot_13.png){ #fig:012 width=70% }
+	
 	1. Попробовала удалить ранее созданный каталог ~/newdir командой rm. Сделать это не получилось, так как нужно было использовать опцию -r(рис. [-@fig:013])
-	![Ошибка удаления каталога](image/Screenshot_14.png){ #fig:013 width=70% }
+	
+		![Ошибка удаления каталога](image/Screenshot_14.png){ #fig:013 width=70% }
+	
 	1. Удалила каталог ~/newdir/morefun из домашнего каталога(рис. [-@fig:014])
-	![Удаление каталога ~/newdir/morefun](image/Screenshot_15.png){ #fig:014 width=70% }
+	
+		![Удаление каталога ~/newdir/morefun](image/Screenshot_15.png){ #fig:014 width=70% }
+	
 1. С помощью команды man ls определила, какую опцию команды ls нужно использовать для просмотра содержимое не только указанного каталога, но и подкаталогов.(рис. [-@fig:015])
-![просмотр опций ls](image/Screenshot_16.png){ #fig:015 width=70% }
+
+	![просмотр опций ls](image/Screenshot_16.png){ #fig:015 width=70% }
+    
 Опция R выполняет эту задачу(рис. [-@fig:016])
-![Опция R](image/Screenshot_17.png){ #fig:016 width=70% }
-![ls -R](image/Screenshot_18.png){ #fig:017 width=70% }
+
+	[Опция R](image/Screenshot_17.png){ #fig:016 width=70% }
+
+	![ls -R](image/Screenshot_18.png){ #fig:017 width=70% }
+
 1. С помощью команды man ls определила, какую опцию команды ls нужно использовать, чтобы отсортировать по времени последнего изменения выводимый список содержимого каталога с развёрнутым описанием файлов.
 Опция с выполняет эту задачу(рис. [-@fig:018])
-![Опция с](image/Screenshot_19.png){ #fig:018 width=70% }
-![ls -R](image/Screenshot_20.png){ #fig:019 width=70% }
+
+	![Опция с](image/Screenshot_19.png){ #fig:018 width=70% }
+
+	![ls -R](image/Screenshot_20.png){ #fig:019 width=70% }
+
 1. Использовала команду man для просмотра описания следующих команд: cd, pwd, mkdir, rmdir, rm. 
 	1. У команды cd нет опций
-	![man cd](image/Screenshot_21.png){ #fig:020 width=70% }
+	
+		![man cd](image/Screenshot_21.png){ #fig:020 width=70% }
 	1. 
-	* -L, --logical - брать директорию из переменной окружения, даже если она содержит символические ссылки;
-	* -P - отбрасывать все символические ссылки;
-	* --help - отобразить справку по утилите;
-	* --version - отобразить версию утилиты.
-	![man pwd](image/Screenshot_23.png){ #fig:021 width=70% }
+    	* -L, --logical - брать директорию из переменной окружения, даже если она содержит символические ссылки;
+    	* -P - отбрасывать все символические ссылки;
+    	* --help - отобразить справку по утилите;
+    	* --version - отобразить версию утилиты.
+    	
+        	![man pwd](image/Screenshot_23.png){ #fig:021 width=70% }
+
 	1. 
-	* -m (--mode=режим) - назначить режим доступа (права). 
-	* -p (--parents) - не показывать ошибки, а также их игнорировать.
-	* -z (--context=CTX ) принимает контекст SELinux для каталога по умолчанию.
-	* -v (--verbose) - выводить сообщение о каждом новым каталоге.
-	* --help - вывести справочную информацию.
-	![man mkdir](image/Screenshot_24.png){ #fig:022 width=70% }
+    	* -m (--mode=режим) - назначить режим доступа (права). 
+    	* -p (--parents) - не показывать ошибки, а также их игнорировать.
+    	* -z (--context=CTX ) принимает контекст SELinux для каталога по умолчанию.
+    	* -v (--verbose) - выводить сообщение о каждом новым каталоге.
+    	* --help - вывести справочную информацию.
+	
+		![man mkdir](image/Screenshot_24.png){ #fig:022 width=70% }
+	
 	1. 
-	* -p - позволяет удалить каталог и вышележащие каталоги, оказавшиеся пустыми.
-	* -v - выводит диагностику для каждого обработанного каталога
-	![man rmdir](image/Screenshot_25.png){ #fig:023 width=70% }
+    	* -p - позволяет удалить каталог и вышележащие каталоги, оказавшиеся пустыми.
+    	* -v - выводит диагностику для каждого обработанного каталога
+    	
+        	![man rmdir](image/Screenshot_25.png){ #fig:023 width=70% }
+	
 	1. 
-	* -f или --force - игнорировать несуществующие файлы и аргументы. Никогда не выдавать запросы на подтверждение удаления.
-	* -i - выводить запрос на подтверждение удаления каждого файла.
-	* -r или -R или --recursive - удаление директорий и их содержимого. Рекурсивное удаление.
-	* -d или --dir - удалять пустые директории.
-	* -v или --verbose - выводить информацию об удаляемых файлах.
-	![man rm](image/Screenshot_26.png){ #fig:024 width=70% }
+    	* -f или --force - игнорировать несуществующие файлы и аргументы. Никогда не выдавать запросы на подтверждение удаления.
+    	* -i - выводить запрос на подтверждение удаления каждого файла.
+    	* -r или -R или --recursive - удаление директорий и их содержимого. Рекурсивное удаление.
+    	* -d или --dir - удалять пустые директории.
+    	* -v или --verbose - выводить информацию об удаляемых файлах.
+    	
+		![man rm](image/Screenshot_26.png){ #fig:024 width=70% }
+	
 1. Используя информацию, полученную при помощи команды history, выполнила модификацию и исполнение нескольких команд из буфера команд.(рис. [-@fig:025])
+
 ![вывод команды history](image/Screenshot_27.png){ #fig:025 width=70% }
+
 Исправила опечатку в команде man (рис. [-@fig:026])
+
 ![модификация команды](image/Screenshot_28.png){ #fig:026 width=70% }
+
 Команда начала работать (рис. [-@fig:027])
+
 ![man cd](image/Screenshot_2.png){ #fig:027 width=70% }
+
 Поменяла опцию ls (рис. [-@fig:028])
+
 ![модификация команды](image/Screenshot_29.png){ #fig:028 width=70% }
 
 # Контрольные вопросы
